@@ -1,0 +1,23 @@
+#Problem Being Solved
+>We are aware of several bank robberies like circumstances under which armed person(s) in a premises can cause severe harm for bank and our customers.
+>After investigation, it turns out to; if had taken a proactive & reactive measures, such incidents could have been dealt optimally.
+>Hence, the aim is to develop a better reactive mechanism through Video analytics, wherein  scenarios vis-à-vis, 
+     #Suspicious Activities
+     #Hazardous Objects being brought into the premises.
+     #Break / Interruption in footage
+     #Tampering with the cameras / sensitive or high priority area within premises
+     #Any activity that needs attention
+     #Fire / Theft related incident taking place
+can be identified through the video analysis and an alarm can be raised to the surveillance/control room as well as the nearest police station if configured.
+
+
+
+#Approach taken to create the model
+>In order to achieve the main goal of video analytics that is to automatically recognize temporal and spatial events in videos footage, it has been planned to implement several Deep Learning & AI algorithm modules which leverages existing video surveillance networks to derive searchable, actionable, and quantifiable intelligence from live or recorded video footage.
+
+
+#Reason why your solution should be considered
+>We understand the eagerness of the need for such technological solutions; which if implemented, can solve several problems and upholds the technical supremacy in the banking world.
+>Our solution incorporating with a boost can actually be helpful for those who urges it in ground level. Hence, kindly request you to consider our project. 
+
+
