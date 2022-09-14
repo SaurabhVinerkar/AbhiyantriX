@@ -20,4 +20,22 @@ can be identified through the video analysis and an alarm can be raised to the s
 >We understand the eagerness of the need for such technological solutions; which if implemented, can solve several problems and upholds the technical supremacy in the banking world.
 >Our solution incorporating with a boost can actually be helpful for those who urges it in ground level. Hence, kindly request you to consider our project. 
 
+#What it does?
+This Bank Customer analytics application monitors people activity, counts total number of people inside a bank and keeps a check on the resources people fetch for frequently in the bank. It is made efficient on any number of screens by using video or camera resources.
 
+#How It works?
+Customers: If the feed type of the video is customer, the application grabs the frame from that input stream and uses a Deep Neural Network model for detecting the faces in it. If there is anybody present in the frame, it is counted as a customer. Once the face is detected, the application uses head-pose estimation model to check the head pose of the person. If the person is looking at the camera then his emotions are detected using emotions recognition model. Using the data obtained from this, it infers if the person is interested or not and gives the total number of people detected. It also measures the duration for which the person is present in the frame and the duration for which he was looking at the camera.
+Store traffic: If the video feed type is traffic, the application uses a Deep Neural Network model to detect people in the frame. The total number of people visited and the number of people currently present in front the camera is obtained from this.
+The application is capable of processing multiple video input feeds, each having different feed type. The data obtained from these videos is stored in InfluxDB for analysis and visualized on Grafana. It uses Flask python web framework to live stream the output videos to the Grafana.
+
+#Which model to use?
+The application uses IntelÂ® Pre-Trained models in the feed type shopper i.e.face-detection-adas-0001, head-pose-estimation-adas-0001, emotion-recognition-retail-0003. For the feed type traffic, person-detection-retail-0002 is used and these can be downloaded using model downloader script.
+For video feed type shelf, mobilenet-ssd model is used that can be downloaded using downloader script present in IntelÂ® Distribution of OpenVINOâ„¢ toolkit. The mobilenet-ssd model is a Single-Shot multibox Detection (SSD) network intended to perform object detection. This model is implemented using the Caffe* framework. For details about this model, check out the repository.
+
+#Innovations Highlights :
+1. Detect Sentiment of customers
+2. Timetaken per person to complete the process
+3. count of people in bank currently
+4. no of people standing in queue 
+5. fixing cameras in ATMs to ensure one person entry at a time
+6. any behaviour like running or sudden changes are alerted
